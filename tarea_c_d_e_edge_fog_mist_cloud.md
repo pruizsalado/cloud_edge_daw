@@ -46,18 +46,27 @@ Mist
 ## 🅴 Tarea E — Ventajas de la Cloud en sistemas conectados
 Incluye mínimo 3 ventajas (recomendado 5), con explicación + ejemplo.
 
-1) Ventaja: ...
-   Explicación: ...
-   Ejemplo: ...
+1) Ventaja: Escalabilidad
+   Explicación: La nube permite aumentar o reducir recursos (cómputo, almacenamiento, red) de forma dinámica según la demanda, sin necesidad de cambiar la infraestructura física. Esto es clave en sistemas conectados con cargas variables.
+   Ejemplo: Una plataforma IoT puede gestionar miles de sensores adicionales durante horas pico sin interrupciones, escalando automáticamente los servicios en la nube.
 
-2) Ventaja: ...
-   Explicación: ...
-   Ejemplo: ...
+2) Ventaja: Alta disponibilidad
+   Explicación: Los proveedores cloud ofrecen infraestructura distribuida geográficamente con mecanismos de redundancia y tolerancia a fallos, garantizando que los sistemas estén disponibles incluso ante fallos.
+   Ejemplo: Un sistema de monitoreo industrial sigue funcionando aunque un centro de datos tenga una caída, gracias a la replicación en múltiples regiones.
 
-3) Ventaja: ...
-   Explicación: ...
-   Ejemplo: ...
+3) Ventaja: Procesamiento y análisis avanzado
+   Explicación: La nube facilita el uso de Big Data, analítica avanzada e inteligencia artificial para procesar grandes volúmenes de datos provenientes de dispositivos conectados.
+   Ejemplo: Datos recopilados por sensores de tráfico se analizan en la nube para predecir congestiones y optimizar semáforos mediante modelos de IA.
+
+4) Ventaja: Reducción de costos
+   Explicación: El modelo de pago por uso elimina la necesidad de grandes inversiones iniciales en hardware y mantenimiento, optimizando el costo total del sistema.
+   Ejemplo: Una startup de smart cities paga solo por los recursos cloud utilizados durante pruebas y despliegues, sin comprar servidores propios.
+
+5) Ventaja: Gestión centralizada
+   Explicación: La nube permite administrar, monitorear y actualizar dispositivos conectados desde un único punto, simplificando la operación del sistema.
+   Ejemplo: Actualizaciones de firmware para miles de dispositivos IoT se distribuyen remotamente desde la nube.
 
 **Fuente oficial (mín. 1):**
-- ...
+- Amazon Web Services (AWS) — Benefits of Cloud Computing
+https://aws.amazon.com/what-is-cloud-computing/
 
