@@ -18,16 +18,25 @@ https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/e
 
 ## 🅳 Tarea D — Fog vs Mist (niveles y zonas de aplicación)
 **Definición Fog (2–4 líneas):**
-...
+Fog Computing es una capa intermedia entre Edge y Cloud que extiende los servicios de la nube hacia la red. Se encarga de procesar, filtrar y agregar datos provenientes de múltiples nodos edge. Reduce la latencia y el tráfico hacia la nube, manteniendo cierta capacidad de análisis distribuido.
 
 **Definición Mist (2–4 líneas):**
-...
+Mist Computing es el nivel más cercano a la fuente de datos, ubicado directamente en sensores y dispositivos IoT. Realiza procesamiento mínimo y decisiones muy simples en tiempo real. Su enfoque principal es la inmediatez y el consumo ultra bajo de recursos.
 
 **Esquema (ASCII o Mermaid recomendado):**
-...
+graph TD
+    A[Cloud<br/>Análisis global<br/>Big Data<br/>ML] 
+    B[Fog<br/>Agregación<br/>Filtrado<br/>Coordinación]
+    C[Edge<br/>Procesamiento local<br/>Control en tiempo real]
+    D[Mist<br/>Sensores<br/>Actuadores]
+
+    A --> B
+    B --> C
+    C --> D
+
 
 **Zonas de aplicación (qué hace cada capa):**
-- Mist → ...
-- Edge → ...
-- Fog → ...
-- Cloud → ...
+- Mist → Lectura de sensores, filtrado básico, acciones inmediatas simples (ej. activar una alarma).
+- Edge → Procesamiento local en tiempo real, control de dispositivos, análisis rápido de datos.
+- Fog → Agregación de datos de múltiples edges, análisis intermedio, optimización del tráfico hacia la nube.
+- Cloud → Almacenamiento masivo, análisis avanzado, inteligencia artificial, gestión y orquestación global.
