@@ -24,34 +24,17 @@ Fog Computing es una capa intermedia entre Edge y Cloud que extiende los servici
 Mist Computing es el nivel más cercano a la fuente de datos, ubicado directamente en sensores y dispositivos IoT. Realiza procesamiento mínimo y decisiones muy simples en tiempo real. Su enfoque principal es la inmediatez y el consumo ultra bajo de recursos.
 
 **Esquema (ASCII o Mermaid recomendado):**
-+-----------------------------+
-|            CLOUD            |
-|  • Big Data                 |
-|  • Machine Learning         |
-|  • Gestión global           |
-+-------------▲---------------+
-              |
-+-------------+---------------+
-|             FOG             |
-|  • Agregación de datos      |
-|  • Filtrado y análisis      |
-|  • Coordinación regional    |
-+-------------▲---------------+
-              |
-+-------------+---------------+
-|             EDGE            |
-|  • Procesamiento local      |
-|  • Control en tiempo real   |
-|  • Respuesta rápida         |
-+-------------▲---------------+
-              |
-+-------------+---------------+
-|             MIST            |
-|  • Sensores / actuadores    |
-|  • Lógica mínima            |
-|  • Respuesta inmediata      |
-+-----------------------------+
 
+<pre>
+Cloud
+  ↑  análisis global / IA
+Fog
+  ↑  agregación / filtrado
+Edge
+  ↑  procesamiento local
+Mist
+  ↑  sensores / actuadores
+</pre>
 
 
 **Zonas de aplicación (qué hace cada capa):**
